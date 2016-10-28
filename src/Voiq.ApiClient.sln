@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voiq.ApiClient", "Voiq.ApiClient\Voiq.ApiClient.csproj", "{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voiq.Tests.ApiClient", "Voiq.ApiClient.Tests\Voiq.Tests.ApiClient.csproj", "{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AzureWebsites-Beta|Any CPU = AzureWebsites-Beta|Any CPU
+		AzureWebsites-Production|Any CPU = AzureWebsites-Production|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}.AzureWebsites-Beta|Any CPU.ActiveCfg = AzureWebsites-Beta|Any CPU
+		{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}.AzureWebsites-Beta|Any CPU.Build.0 = AzureWebsites-Beta|Any CPU
+		{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}.AzureWebsites-Production|Any CPU.ActiveCfg = AzureWebsites-Production|Any CPU
+		{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}.AzureWebsites-Production|Any CPU.Build.0 = AzureWebsites-Production|Any CPU
+		{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}.AzureWebsites-Beta|Any CPU.ActiveCfg = AzureWebsites-Beta|Any CPU
+		{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}.AzureWebsites-Beta|Any CPU.Build.0 = AzureWebsites-Beta|Any CPU
+		{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}.AzureWebsites-Production|Any CPU.ActiveCfg = AzureWebsites-Production|Any CPU
+		{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}.AzureWebsites-Production|Any CPU.Build.0 = AzureWebsites-Production|Any CPU
+		{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40F31D9-A541-451F-9EAD-DBCB2E0E80C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

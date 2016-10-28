@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E126D78-A184-4815-9B7C-C7E22E4F3DF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Voiq.ApiClient</RootNamespace>
+    <AssemblyName>Voiq.ApiClient</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AzureWebsites-Production|AnyCPU'">
+    <OutputPath>bin\AzureWebsites-Production\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AzureWebsites-Beta|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\AzureWebsites-Beta\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\Environments.cs" />
+    <Compile Include="Models\Answer.cs" />
+    <Compile Include="Models\Campaign.cs" />
+    <Compile Include="Models\CampaignCallFrequencies.cs" />
+    <Compile Include="Models\CampaignCallFrequency.cs" />
+    <Compile Include="Models\CampaignSummary.cs" />
+    <Compile Include="Models\Survey.cs" />
+    <Compile Include="Models\SurveyResult.cs" />
+    <Compile Include="Models\VoiqDateWithTimeZone.cs" />
+    <Compile Include="Models\VoiqModelBase.cs" />
+    <Compile Include="SubClients\CampaignsClient.cs" />
+    <Compile Include="SubClients\LeadsClient.cs" />
+    <Compile Include="Enums\CallDispositions.cs" />
+    <Compile Include="Enums\CampaignStatus.cs" />
+    <Compile Include="Enums\QuestionTypes.cs" />
+    <Compile Include="Exceptions\VoiqException.cs" />
+    <Compile Include="Models\AuthTokens.cs" />
+    <Compile Include="Models\Lead.cs" />
+    <Compile Include="Models\PhoneCall.cs" />
+    <Compile Include="Models\ValidationError.cs" />
+    <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\QuestionBase.cs" />
+    <Compile Include="Models\QuestionOption.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\ContactsBulkRequest.cs" />
+    <Compile Include="Requests\CreateQuestionRequest.cs" />
+    <Compile Include="Requests\LoginRequestBase.cs" />
+    <Compile Include="Requests\TokenRefreshRequest.cs" />
+    <Compile Include="Requests\LoginRequest.cs" />
+    <Compile Include="Responses\CallsListResponse.cs" />
+    <Compile Include="Responses\ErrorResponse.cs" />
+    <Compile Include="SubClients\PhoneCallsClient.cs" />
+    <Compile Include="SubClients\QuestionsClient.cs" />
+    <Compile Include="SubClients\SurveyResultsClient.cs" />
+    <Compile Include="SubClients\SurveysClient.cs" />
+    <Compile Include="SubClients\SubClientBase.cs" />
+    <Compile Include="VoiqClient.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
